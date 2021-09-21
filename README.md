@@ -1,1 +1,1 @@
-# Fast-Correlation
+# Fast Correlation

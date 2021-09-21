@@ -1,0 +1,17 @@
+[package]
+name = "fast-correlation"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "fast_correlation"
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pyo3 = { version = "0.14" }
+pyo3-asyncio = { version = "0.14", features = ["attributes", "async-std-runtime"] }
+async-std = "1.9"
+numpy = "0.14.1"
+ndarray = "0.15.0"
