@@ -1,3 +1,5 @@
+mod utils;
+
 use pyo3::{
     prelude::{
         Python,
@@ -20,7 +22,6 @@ use ndarray::{
     arr1,
     Array1
 };
-
 
 #[pyfunction]
 fn covariance<'py>(py: Python<'py>, a: PyReadonlyArray1<f64>) -> PyResult<&'py PyArray1<f64>> {
